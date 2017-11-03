@@ -10,11 +10,12 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew docker git git-flow mercurial pip python
+plugins=(brew docker git git-flow mercurial pip python)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
 source $HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme
+
 source ~/.bash_profile
