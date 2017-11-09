@@ -15,7 +15,12 @@ plugins=(brew docker git git-flow mercurial pip python)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
 source $HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme
+source /Users/dmilburn/.utilFunctions.sh
 
-source ~/.bash_profile
+export PATH=$PATH:/Users/dmilburn/src/projects/gitplus/commands
+export GIT_MERGE_AUTOEDIT=no
+export PATH=$PATH:$HOME/.nodenv/shims
+
+[ -f /opt/hamurai/env.sh ] && source /opt/hamurai/env.sh
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
