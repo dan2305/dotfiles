@@ -22,6 +22,15 @@ export PATH=$PATH:/Users/dmilburn/src/projects/gitplus/commands
 export GIT_MERGE_AUTOEDIT=no
 export PATH=$PATH:$HOME/.nodenv/shims
 export PATH=$PATH:/opt/vertica/bin
+export ANSIBLE_ENV_PATH=/Users/dmilburn/src/projects/Ansible-Environments
 
 [ -f /opt/hamurai/env.sh ] && source /opt/hamurai/env.sh
 if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/dmilburn/.nodenv/versions/8.9.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/dmilburn/.nodenv/versions/8.9.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/dmilburn/.nodenv/versions/8.9.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/dmilburn/.nodenv/versions/8.9.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+export PATH="/usr/local/sbin:$PATH"
