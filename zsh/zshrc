@@ -36,3 +36,7 @@ if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 export PATH="/usr/local/sbin:$PATH"
 
 alias ag='ag --path-to-ignore ~/.ignore'
+
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/dmilburn/.nodenv/versions/8.11.0/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/dmilburn/.nodenv/versions/8.11.0/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
