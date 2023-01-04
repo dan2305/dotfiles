@@ -1,11 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -15,8 +10,7 @@ plugins=(brew docker git git-flow mercurial pip python)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-source $HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme
-source /Users/dmilburn/.utilFunctions.sh
+source "/opt/homebrew/opt/spaceship/spaceship.zsh"
 
 export PATH=$PATH:/Users/dmilburn/src/projects/gitplus/commands
 export GIT_MERGE_AUTOEDIT=no
@@ -41,4 +35,4 @@ alias ag='ag --path-to-ignore ~/.ignore'
 # uninstall by removing these lines or running `tabtab uninstall slss`
 [[ -f /Users/dmilburn/.nodenv/versions/8.11.0/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/dmilburn/.nodenv/versions/8.11.0/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
 
-export NPM_TOKEN=$(aws --profile msys ssm get-parameters --names /ac/npm-auth-token-secure --with-decryption | jq -r ".Parameters[0].Value")
+#export NPM_TOKEN=$(aws --profile msys ssm get-parameters --names /ac/npm-auth-token-secure --with-decryption | jq -r ".Parameters[0].Value")
